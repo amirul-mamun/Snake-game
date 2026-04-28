@@ -11,7 +11,8 @@ html , body{
 :root{
     /* Bacground Color */
     --bg-primary-color : rgb(15, 15, 15);
-    --bg-secondary-color: pink;
+    --bg-fill-color: pink;
+    --bg-food-color: rgb(207, 12, 12);
 
     /* Text Color */
     --text-primary-color: rgb(241, 238, 238);
@@ -46,6 +47,21 @@ html{
 main, section{
     width: 100%;
     height: 100%;
+}
+.btn{
+    padding: var(--space-sm) var(--space-md);
+    border: none;
+    border-radius: var(--border-radious-sm);
+    /* background-color: var(--bg-fill-color); */
+    color: var(--bg-primary-color);
+    cursor: pointer;
+    /* font-size: 1 rem;
+    font-weight: 600;
+     */
+     transition: all  0.3 ease;
+}
+.btn:hover{
+    transform: scale(1.05);
 }
 
 section{
@@ -86,5 +102,33 @@ section .infos{
 }
 
 .fill{
-background-color: var(--bg-secondary-color);
+background-color: var(--bg-fill-color);
+}
+.food{
+    background-color: var(--bg-food-color);
+}
+
+.modal{
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    /* background-color: rgb(46, 46, 46); */
+    backdrop-filter: blur(4px) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal .start-game,
+.modal .game-over{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-lg);
+}
+
+.modal .game-over{
+    display: none;
+    
 }
