@@ -12,7 +12,7 @@ html , body{
     /* Bacground Color */
     --bg-primary-color : rgb(15, 15, 15);
     --bg-fill-color: pink;
-    --bg-food-color: rgb(207, 12, 12);
+    --bg-food-color: rgb(233, 236, 10);
 
     /* Text Color */
     --text-primary-color: rgb(241, 238, 238);
@@ -99,6 +99,10 @@ section .infos{
     height: 30px;
     width: 30px;
     border: 1px solid var(--border-primary-color);
+    border-radius: 50%;
+}
+.head{
+    background-color: rgb(238, 87, 87);
 }
 
 .fill{
